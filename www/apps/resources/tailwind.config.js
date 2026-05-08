@@ -1,4 +1,7 @@
 import coreConfig from "tailwind"
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -36,4 +39,4 @@ module.exports = {
       "bg-stripes-dark": "url('/resources/images/bg-stripes-dark.png')",
     },
   },
-}
+};
