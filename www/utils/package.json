@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
+    "build": "node init && turbo run build",
     "watch": "turbo run watch",
     "lint": "turbo run lint",
     "generate:references": "turbo run generate:references",

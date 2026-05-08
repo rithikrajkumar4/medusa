@@ -36,7 +36,7 @@
     "qs": "^6.12.1"
   },
   "scripts": {
-    "build": "yarn run -T rimraf dist && yarn run -T tsc -p tsconfig.json && yarn run -T tsc -p tsconfig.esm.json",
+    "build": "node init && yarn run -T rimraf dist && yarn run -T tsc -p tsconfig.json && yarn run -T tsc -p tsconfig.esm.json",
     "test": "../../../node_modules/.bin/jest --passWithNoTests --bail --forceExit --detectOpenHandles",
     "watch": "yarn run -T tsc --build --watch"
   }

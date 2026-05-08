@@ -23,7 +23,7 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "yarn clean && yarn generate:tags && tsc",
+    "build": "node init && yarn clean && yarn generate:tags && tsc",
     "generate:tags": "node --loader ts-node/esm src/scripts/generate-tags.ts",
     "clean": "rimraf dist",
     "watch": "tsc --watch"

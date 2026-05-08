@@ -2,9 +2,9 @@
   "name": "typedoc-generate-references",
   "license": "MIT",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/index.ts",
-    "start": "node dist/index.js",
-    "build": "tsc",
+    "dev": "node init && node --loader ts-node/esm src/index.ts",
+    "start": "node init && node dist/index.js",
+    "build": "node init && tsc",
     "watch": "tsc --watch",
     "prepublishOnly": "cross-env NODE_ENV=production tsc --build",
     "generate:references": "yarn start generate all --merge"

@@ -29,9 +29,9 @@
     "styles.css"
   ],
   "scripts": {
-    "build": "yarn clean && yarn build:js:cjs && yarn build:js:esm",
-    "build:js:cjs": "yarn run -T tsc --project tsconfig.cjs.json && yarn run -T tsc-alias -p tsconfig.cjs.json",
-    "build:js:esm": "yarn run -T tsc --project tsconfig.esm.json && yarn run -T tsc-alias -p tsconfig.esm.json",
+    "build": "node init && yarn clean && yarn build:js:cjs && yarn build:js:esm",
+    "build:js:cjs": "node init && yarn run -T tsc --project tsconfig.cjs.json && yarn run -T tsc-alias -p tsconfig.cjs.json",
+    "build:js:esm": "node init && yarn run -T tsc --project tsconfig.esm.json && yarn run -T tsc-alias -p tsconfig.esm.json",
     "clean": "yarn run -T rimraf dist",
     "test": "../../../node_modules/.bin/vitest --run",
     "test:watch": "../../../node_modules/.bin/vitest",

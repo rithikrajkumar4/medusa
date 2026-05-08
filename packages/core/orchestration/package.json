@@ -34,7 +34,7 @@
     "ulid": "^2.3.0"
   },
   "scripts": {
-    "build": "yarn run -T rimraf dist && yarn run -T tsc --build",
+    "build": "node init && yarn run -T rimraf dist && yarn run -T tsc --build",
     "watch": "yarn run -T tsc --build --watch",
     "test": "../../../node_modules/.bin/jest --bail --forceExit"
   }

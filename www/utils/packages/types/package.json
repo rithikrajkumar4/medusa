@@ -7,7 +7,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "watch": "tsc --watch",
     "lint": "eslint --ext .ts src"
   },

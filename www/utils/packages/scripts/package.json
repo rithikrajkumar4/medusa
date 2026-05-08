@@ -6,7 +6,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "watch": "tsc --watch",
     "check:freshness": "node ./dist/freshness-check.js",
     "generate:message": "node ./dist/get-generate-diff-message.js",

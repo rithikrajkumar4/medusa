@@ -2,8 +2,8 @@
   "name": "workflows-diagram-generator",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "build": "tsc",
+    "start": "node init && ts-node src/index.ts",
+    "build": "node init && tsc",
     "watch": "tsc --watch",
     "prepublishOnly": "cross-env NODE_ENV=production tsc --build"
   },

@@ -15,7 +15,7 @@
   "author": "Shahed Nasser",
   "type": "module",
   "scripts": {
-    "build": "tsc && copyfiles --up 1 ./src/**/*.hbs ./dist/",
+    "build": "node init && tsc && copyfiles --up 1 ./src/**/*.hbs ./dist/",
     "lint": "eslint --ext .ts src"
   },
   "peerDependencies": {

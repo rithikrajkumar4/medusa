@@ -7,7 +7,7 @@
   "scripts": {
     "test:integration": "jest --silent=false --no-cache --bail --detectOpenHandles --forceExit --logHeapUsage",
     "test:integration:chunk": "jest --silent --no-cache --bail --forceExit --detectOpenHandles --testPathPattern=$(echo $CHUNKS | jq -r \".[${CHUNK}] | .[]\")",
-    "build": "tsc ./src/* --allowJs --outDir ./dist"
+    "build": "node init && tsc ./src/* --allowJs --outDir ./dist"
   },
   "dependencies": {
     "@medusajs/api-key": "workspace:^",
