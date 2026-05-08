@@ -67,7 +67,7 @@
   "scripts": {
     "watch": "yarn run -T tsc --watch ",
     "watch:test": "yarn run -T tsc --watch",
-    "build": "yarn run -T rimraf dist && yarn run -T tsc --build",
+    "build": "node init && yarn run -T rimraf dist && yarn run -T tsc --build",
     "test": "../../../node_modules/.bin/jest --bail --forceExit --testPathPattern=src"
   },
   "devDependencies": {

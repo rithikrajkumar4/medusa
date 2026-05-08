@@ -8,4 +8,4 @@ const files = path.join(root, "**/*.{js,ts,jsx,tsx,mdx}")
 module.exports = {
   ...coreConfig,
   content: [files],
-}
+};

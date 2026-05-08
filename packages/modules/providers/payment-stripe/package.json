@@ -21,7 +21,7 @@
   "license": "MIT",
   "scripts": {
     "test": "../../../../node_modules/.bin/jest --passWithNoTests src",
-    "build": "yarn run -T rimraf dist && yarn run -T tsc --build ./tsconfig.json",
+    "build": "node init && yarn run -T rimraf dist && yarn run -T tsc --build ./tsconfig.json",
     "watch": "yarn run -T tsc --watch"
   },
   "devDependencies": {

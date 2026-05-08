@@ -7,7 +7,7 @@
   "scripts": {
     "test:integration": "jest --no-cache --bail --detectOpenHandles --forceExit --logHeapUsage",
     "test:integration:chunk": "jest --silent --no-cache --bail --forceExit",
-    "build": "tsc --allowJs --outDir ./dist"
+    "build": "node init && tsc --allowJs --outDir ./dist"
   },
   "dependencies": {
     "@medusajs/api-key": "workspace:^",

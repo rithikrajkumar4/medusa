@@ -15,4 +15,4 @@ module.exports = defineJestConfig({
     "__fixtures__",
   ],
   setupFiles: ["../setup-env.js"],
-})
+});

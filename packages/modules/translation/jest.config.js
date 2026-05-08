@@ -12,4 +12,4 @@ module.exports = defineJestConfig({
     "^@utils$": "<rootDir>/src/utils",
     "^@utils/(.*)$": "<rootDir>/src/utils/$1",
   },
-})
+});

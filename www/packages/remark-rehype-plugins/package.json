@@ -23,7 +23,7 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "yarn clean && tsc",
+    "build": "node init && yarn clean && tsc",
     "clean": "rimraf dist",
     "watch": "tsc --watch"
   },

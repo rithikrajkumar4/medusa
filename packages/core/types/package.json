@@ -27,7 +27,7 @@
   "author": "Medusa",
   "license": "MIT",
   "scripts": {
-    "build": "yarn run -T rimraf dist && yarn run -T tsc --build",
+    "build": "node init && yarn run -T rimraf dist && yarn run -T tsc --build",
     "watch": "yarn run -T tsc --build --watch",
     "test": "exit 0"
   },

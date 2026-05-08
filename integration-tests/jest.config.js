@@ -47,4 +47,4 @@ module.exports = {
   },
   setupFiles: ["<rootDir>/integration-tests/setup-env.js"],
   setupFilesAfterEnv: ["<rootDir>/integration-tests/setup.js"],
-}
+};

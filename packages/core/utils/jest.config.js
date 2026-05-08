@@ -8,4 +8,4 @@ module.exports = defineJestConfig({
     `\\.test-output/`,
   ],
   modulePathIgnorePatterns: [`dist/`, `\\.test-output/`],
-})
+});

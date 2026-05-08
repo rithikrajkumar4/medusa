@@ -10,7 +10,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "yarn clean && tsc",
+    "build": "node init && yarn clean && tsc",
     "lint": "eslint --ext .ts src",
     "clean": "rimraf dist",
     "watch": "tsc --watch"

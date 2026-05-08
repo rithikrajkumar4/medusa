@@ -345,4 +345,4 @@ const nextConfig = {
   },
 }
 
-export default withMDX(nextConfig)
+export default withMDX(nextConfig);

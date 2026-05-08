@@ -17,4 +17,4 @@ module.exports = defineJestConfig({
   ],
   setupFiles: ["../setup-env.js"],
   setupFilesAfterEnv: ["../setup.js"],
-})
+});

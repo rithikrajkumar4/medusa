@@ -5,4 +5,4 @@ module.exports = defineJestConfig({
     "^@types": "<rootDir>/src/types",
     "^@utils": "<rootDir>/src/utils",
   },
-})
+});

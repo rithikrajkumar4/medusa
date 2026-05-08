@@ -1,5 +1,8 @@
 import path from "path"
 import coreConfig from "tailwind"
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 // Get two levels up from require.resolve("@medusajs/ui")
 const root = path.join(require.resolve("@medusajs/ui"), "../..")
@@ -49,4 +52,4 @@ module.exports = {
       "bg-stripes-dark": "url('/ui/images/bg-stripes-dark.png')",
     },
   },
-}
+};

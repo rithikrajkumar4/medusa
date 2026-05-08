@@ -1,2 +1,2 @@
 const defineJestConfig = require("../../define_jest_config")
-module.exports = defineJestConfig({})
+module.exports = defineJestConfig({});

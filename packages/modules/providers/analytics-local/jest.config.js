@@ -3,4 +3,4 @@ module.exports = defineJestConfig({
   moduleNameMapper: {
     "^@services": "<rootDir>/src/services",
   },
-})
+});

@@ -20,7 +20,7 @@
   "author": "Medusa",
   "license": "MIT",
   "scripts": {
-    "build": "yarn run -T tsc --build",
+    "build": "node init && yarn run -T tsc --build",
     "watch": "yarn run -T tsc --watch",
     "test": "../../../node_modules/.bin/jest --passWithNoTests --bail --forceExit --testPathPattern=src",
     "generate:http-types": "node dist/index.js generate",

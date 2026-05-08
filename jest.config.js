@@ -60,4 +60,4 @@ module.exports = {
   //    )
   //  : [`default`].concat(useCoverage ? `jest-junit` : []),
   // setupFiles: [`<rootDir>/.jestSetup.js`],
-}
+};

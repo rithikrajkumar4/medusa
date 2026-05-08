@@ -19,9 +19,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn build:bundles && yarn build:types",
-    "build:bundles": "rollup -c ./rollup.config.mjs",
-    "build:types": "yarn run -T tsc --emitDeclarationOnly",
+    "build": "node init && yarn build:bundles && yarn build:types",
+    "build:bundles": "node init && rollup -c ./rollup.config.mjs",
+    "build:types": "node init && yarn run -T tsc --emitDeclarationOnly",
     "test": "../../../node_modules/.bin/vitest --run",
     "test:watch": "../../../node_modules/.bin/vitest",
     "test:coverage": "../../../node_modules/.bin/vitest --run --coverage",
